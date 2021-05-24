@@ -51,7 +51,7 @@ public class RoomManager extends Room {
 		
 		this.entryRoom=start;
 		
-		Room[] startExits= {entryRoom, garage};
+		Room[] startExits= {entryRoom, garage, living};
 		Room[] garageExits= {start};
 		Room[] livingExits= {start, kitchen, bed};
 		Room[] kitchenExits= {living};
