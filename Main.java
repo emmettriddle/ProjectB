@@ -42,7 +42,8 @@ public class Main {
 		}
 		
 		if(!playing) {
-			System.out.println("Thank you for playing!");
+			System.out.println("Thank you for exploring my Home!"
+					+ "\nPlease come back soon!");
 		}
 		
 	}
