@@ -6,11 +6,14 @@ public class Room extends Fixture {
 
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, longDescription, shortDescription);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Room() {}
-	
+	// object with the switch case that will allow
+	// the player to move NSEW and will cast their input 
+	// to all caps, and sets an int variable too
+	// assign the direction to the corresponding room exit in 
+	// RoomManager
 	public Room getExit(String dir) { 
 		int ind = 0;
 		dir = dir.toUpperCase();
@@ -30,7 +33,7 @@ public class Room extends Fixture {
 		}
 		
 		if (ind >= this.exits.length || this.exits[ind] == null) {
-			System.out.println("There is no room in that direction");
+			System.out.println("There is no exit in that direction you have walked into a wall.");
 
 			// Return the current room is there is not a room in that direction
 			return this;
